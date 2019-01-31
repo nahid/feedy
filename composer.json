@@ -1,0 +1,37 @@
+{
+    "name": "nahid/feedy",
+    "description": "Feedy is a Laravel package for news feed system",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nahid Bin Azhar",
+            "email": "nahid.dns@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "autoload": {
+        "classmap": [
+        ],
+        "psr-4": {
+            "Nahid\\Feedy\\": "src/"
+        },
+        "files": [
+            "helpers/feedy.php"
+        ]
+    },
+    "minimum-stability": "dev",
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nahid\\Feedy\\FeedyServiceProvider"
+            ],
+            "aliases": {
+                "Permit": "Nahid\\Feedy\\Facades\\Feed"
+            }
+        }
+    }
+}
